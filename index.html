@@ -1,0 +1,660 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ЖК «Две столицы»</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="next-97612_1280.png" rel="apple-touch-icon" sizes="1280x1134">
+<link href="libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/calc.css" rel="stylesheet">
+<!-- <script src="libs/jquery.min.js"></script> -->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="js/wwb14.min.js"></script>
+
+<script>   
+   function displaylightbox(url, options)
+   {
+      options.padding = 0;
+      options.autoScale = true;
+      options.href = url;
+      options.type = 'iframe';
+      $.fancybox(options);
+   }
+</script>
+<script>   
+   $(document).ready(function()
+   {
+      var $RollOver1_Large = $('<img style="border-width:0"/>').hide().appendTo('body');
+      $("#RollOver1 a").hover(function(e)
+      {
+         var cx = 500;
+         var cy = 870;
+         var x = $(this).offset().left + $(this).parent().width()/2 - cx/2;
+         var y = $(this).offset().top + $(this).parent().height()/2 - cy/2;
+         $RollOver1_Large.hide();
+         $RollOver1_Large.attr('title', $(this).find('img').attr('title'));
+         $RollOver1_Large.attr('src', 'images/1h1-2.jpg').css({
+          'position' : 'absolute',
+          'z-index' : 9000,
+          'left': x,
+          'top' : y,
+          'width': cx,
+          'height': cy,
+         })
+         .stop().show('scale', 500)
+         .one('click', function()
+         {
+           $RollOver1_Large.stop().fadeOut();
+         })
+         .one('mouseout', function()
+         {
+           $RollOver1_Large.stop().hide('scale', 500);
+         });
+      }, function()
+      {
+      });
+      var $RollOver2_Large = $('<img style="border-width:0"/>').hide().appendTo('body');
+      $("#RollOver2 a").hover(function(e)
+      {
+         var cx = 500;
+         var cy = 632;
+         var x = $(this).offset().left + $(this).parent().width()/2 - cx/2;
+         var y = $(this).offset().top + $(this).parent().height()/2 - cy/2;
+         $RollOver2_Large.hide();
+         $RollOver2_Large.attr('title', $(this).find('img').attr('title'));
+         $RollOver2_Large.attr('src', 'images/2h1-2.jpg').css({
+          'position' : 'absolute',
+          'z-index' : 9000,
+          'left': x,
+          'top' : y,
+          'width': cx,
+          'height': cy,
+         })
+         .stop().show('scale', 500)
+         .one('click', function()
+         {
+           $RollOver2_Large.stop().fadeOut();
+         })
+         .one('mouseout', function()
+         {
+           $RollOver2_Large.stop().hide('scale', 500);
+         });
+      }, function()
+      {
+      });
+      var $RollOver3_Large = $('<img style="border-width:0"/>').hide().appendTo('body');
+      $("#RollOver3 a").hover(function(e)
+      {
+         var cx = 715;
+         var cy = 500;
+         var x = $(this).offset().left + $(this).parent().width()/2 - cx/2;
+         var y = $(this).offset().top + $(this).parent().height()/2 - cy/2;
+         $RollOver3_Large.hide();
+         $RollOver3_Large.attr('title', $(this).find('img').attr('title'));
+         $RollOver3_Large.attr('src', 'images/3h1-2.jpg').css({
+          'position' : 'absolute',
+          'z-index' : 9000,
+          'left': x,
+          'top' : y,
+          'width': cx,
+          'height': cy,
+         })
+         .stop().show('scale', 500)
+         .one('click', function()
+         {
+           $RollOver3_Large.stop().fadeOut();
+         })
+         .one('mouseout', function()
+         {
+           $RollOver3_Large.stop().hide('scale', 500);
+         });
+      }, function()
+      {
+      });
+      var $RollOver4_Large = $('<img style="border-width:0"/>').hide().appendTo('body');
+      $("#RollOver4 a").hover(function(e)
+      {
+         var cx = 450;
+         var cy = 661;
+         var x = $(this).offset().left + $(this).parent().width()/2 - cx/2;
+         var y = $(this).offset().top + $(this).parent().height()/2 - cy/2;
+         $RollOver4_Large.hide();
+         $RollOver4_Large.attr('title', $(this).find('img').attr('title'));
+         $RollOver4_Large.attr('src', 'images/41h1-2.jpg').css({
+          'position' : 'absolute',
+          'z-index' : 9000,
+          'left': x,
+          'top' : y,
+          'width': cx,
+          'height': cy,
+         })
+         .stop().show('scale', 500)
+         .one('click', function()
+         {
+           $RollOver4_Large.stop().fadeOut();
+         })
+         .one('mouseout', function()
+         {
+           $RollOver4_Large.stop().hide('scale', 500);
+         });
+      }, function()
+      {
+      });
+   });
+</script>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet"><script>   
+   $(document).ready(function(){
+   	$('a[href^="#"]').on('click',function (e) {
+   	    e.preventDefault();
+   
+   	    var target = this.hash,
+   	    $target = $(target);
+   
+   	    $('html, body').stop().animate({
+   	        'scrollTop': $target.offset().top
+   	    }, 900, 'swing', function () {
+   	        window.location.hash = target;
+   	    });
+   	});
+   });
+</script>
+
+</head>
+<body onload="ShowObject('GalBild2', 0);ShowObject('GalBild3', 0);return false;">
+   <script>   setTimeout('yaCounterXXXXXXX.reachGoal("TARGET30SEK");', 30000);
+   </script><script>   
+   function Extension48_checkpos() // [rz] PAO 1.0.0.0
+   {
+   	var obj_on  = document.getElementById("Layer12").style;
+   	var obj_off = document.getElementById("Layer1").style;
+   	var scl_top = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+   	if ( (scl_top >= 103) && (scl_top <= 103 + 10000) )
+   	{
+   		obj_on.display  = "";
+   		obj_off.display = "none";
+   	}
+   	else
+   	{
+   		obj_off.display = "";
+   		obj_on.display  = "none";
+   	}
+   }
+   if      (window.attachEvent     ) { window.attachEvent     ("onscroll", Extension48_checkpos       ); }
+   else if (window.addEventListener) { window.addEventListener(  "scroll", Extension48_checkpos, false); }
+   setTimeout('Extension48_checkpos();', 0);
+   </script>
+   <div id="container">
+   </div>
+   <div id="Layer4" style="position:absolute;text-align:center;left:0%;top:790px;width:100%;height:1654px;z-index:124;min-width:1250px
+">
+      <div id="Layer4_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text9" style="position:absolute;left:127px;top:160px;width:996px;height:46px;text-align:center;z-index:0;">
+            <span style="color:#51473C;font-family:'Lato Light';font-size:19px;line-height:23px;">ЖК находится в Московском районе с развитой инфраструктурой. Поликлиники,<br>аптеки, банки...Всё необходимое находится в пешей доступности!</span></div>
+         <div id="wb_Image8" style="position:absolute;left:37px;top:246px;width:1034px;height:800px;z-index:1;">
+            <img src="images/4.png" id="Image8" alt=""></div>
+         <div id="wb_Text10" style="position:absolute;left:50px;top:266px;width:448px;height:105px;z-index:2;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:21px;">Культура и спорт</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:21px;"><br></span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:21px;">Для детей: развлекательные центры,<br>музыкальная и спортивная школы.<br>Для взрослых: ТРК (Лето и Пулково-3),<br>кинотеатры, кафе.</span></div>
+         <div id="wb_Text11" style="position:absolute;left:876px;top:362px;width:370px;height:63px;z-index:3;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:21px;">4 детских сада, 3 средних школы</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:21px;"><br></span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:21px;">Готовы будут принять детей жителей<br>комплекса «Две столицы».</span></div>
+         <div id="wb_Text12" style="position:absolute;left:1008px;top:641px;width:242px;height:84px;z-index:4;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:21px;">Подземный паркинг</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:21px;"><br></span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:21px;">В ЖК имеется<br>подземный паркинг на<br>300 машиномест.</span></div>
+         <div id="wb_Text13" style="position:absolute;left:826px;top:913px;width:351px;height:84px;z-index:5;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:21px;">Комфортный двор</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:21px;"><br></span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:21px;">Наземный гостевой паркинг, детские<br>площадки, места для отдыха и занятий<br>физкультурой.</span></div>
+         <div id="wb_Text14" style="position:absolute;left:173px;top:879px;width:351px;height:63px;z-index:6;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:21px;">Места для прогулок</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:21px;"><strong><br></strong></span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:21px;">Рядом парки: Пулковский и<br>Дубовая роща.</span></div>
+         <div id="wb_Image9" style="position:absolute;left:3px;top:1065px;width:1245px;height:588px;z-index:7;">
+            <img src="images/5.png" id="Image9" alt=""></div>
+         <div id="Html1" style="position:absolute;left:67px;top:1119px;width:1107px;height:457px;z-index:8">
+            <a class="dg-widget-link" href="http://2gis.ru/spb/firm/70000001034357381/center/30.341565,59.82016/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Санкт-Петербурга</a>
+            <div class="dg-widget-link"><a href="http://2gis.ru/spb/center/30.341565,59.82016/zoom/16/routeTab/rsType/bus/to/30.341565,59.82016╎Две столицы, жилой комплекс?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Две столицы, жилой комплекс</a></div>
+            <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+            <script charset="utf-8">            new DGWidgetLoader({"width":1107,"height":457,"borderColor":"#a3a3a3","pos":{"lat":59.82016,"lon":30.341565,"zoom":16},"opt":{"city":"spb"},"org":[{"id":"70000001034357381"}]});
+            </script>
+            <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+         </div>
+         <div id="wb_Shape33" style="position:absolute;left:516px;top:1560px;width:217px;height:40px;z-index:9;">
+            <div id="link2">
+               <img src="images/img0035.png" id="Shape33" alt="" style="width:217px;height:40px;">
+            </div></div>
+      </div>
+   </div>
+   <div id="Layer2" style="position:absolute;text-align:center;left:0%;top:98px;width:100%;height:37px;z-index:125;min-width:1250px
+">
+      <div id="Layer2_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_TextMenu1" style="position:absolute;left:2px;top:5px;width:1245px;height:32px;z-index:10;">
+            <span><a href="#link1" class="style1">&#1048;&#1085;&#1092;&#1088;&#1072;&#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1072;</a></span><span><a href="#link2" class="style1">&#1055;&#1083;&#1072;&#1085;&#1080;&#1088;&#1086;&#1074;&#1082;&#1080;</a></span><span><a href="#link3" class="style1">&#1057;&#1087;&#1077;&#1094;&#1087;&#1088;&#1077;&#1076;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077;</a></span><span><a href="#link4" class="style1">&#1048;&#1087;&#1086;&#1090;&#1077;&#1082;&#1072;	</a></span><span><a href="#link5" class="style1">&#1061;&#1086;&#1076; &#1089;&#1090;&#1088;&#1086;&#1080;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1072;</a></span><span><a href="#link6" class="style1">&#1050;&#1086;&#1084;&#1072;&#1085;&#1076;&#1072;</a></span><span><a href="#link7" class="style1">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></span></div>
+      </div>
+   </div>
+   <div id="Layer3" style="position:absolute;text-align:center;left:0%;top:135px;width:100%;height:836px;z-index:126;min-width:1250px
+">
+      <div id="Layer3_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text4" style="position:absolute;left:50px;top:36px;width:679px;height:217px;z-index:11;">
+            <span style="color:#51473C;font-family:'Lato Bold';font-size:64px;line-height:77px;">КВАРТИРЫ</span><span style="color:#51473C;font-family:Lato;font-size:24px;line-height:45px;"><strong><br></strong></span><span style="color:#51473C;font-family:'Lato Bold';font-size:37px;line-height:45px;">в ЖК<br>«Две столицы»<br></span><span style="color:#51473C;font-family:Lato;font-size:21px;line-height:25px;"><br></span><span style="color:#51473C;font-family:'Lato Light';font-size:21px;line-height:25px;">Московский район Санкт-Петербурга</span></div>
+         <hr id="Line1" style="position:absolute;left:50px;top:110px;width:97px;z-index:12;">
+         <hr id="Line2" style="position:absolute;left:50px;top:160px;width:97px;z-index:13;">
+         <div id="wb_Shape1" style="position:absolute;left:50px;top:296px;width:313px;height:48px;z-index:14;">
+            <a href="javascript:displaylightbox('./Form1/1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0008_hover.png" alt="" style="border-width:0;width:313px;height:48px;"><span><img src="images/img0008.png" id="Shape1" alt="" style="width:313px;height:48px;"></span></a></div>
+         <div id="wb_Image3" style="position:absolute;left:5px;top:407px;width:1241px;height:348px;z-index:15;">
+            <img src="images/2-2.png" id="Image3" alt=""></div>
+         <div id="wb_Image4" style="position:absolute;left:794px;top:123px;width:456px;height:588px;z-index:16;">
+            <img src="images/2a18430646d8adb84766f1db0389ae8e.png" id="Image4" alt=""></div>
+         <div id="wb_Image7" style="position:absolute;left:442px;top:495px;width:82px;height:63px;z-index:17;">
+            <img src="images/3-2.png" id="Image7" alt=""></div>
+         <div id="wb_Image6" style="position:absolute;left:104px;top:492px;width:77px;height:68px;z-index:18;">
+            <img src="images/3.png" id="Image6" alt=""></div>
+         <div id="wb_Image5" style="position:absolute;left:717px;top:491px;width:82px;height:65px;z-index:19;">
+            <img src="images/3-3-3.png" id="Image5" alt=""></div>
+         <div id="wb_Text5" style="position:absolute;left:104px;top:593px;width:367px;height:46px;z-index:20;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Квартиры класса<br>«комфорт» </span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">от 87 тыс.р/м²</span></div>
+         <div id="wb_Text6" style="position:absolute;left:442px;top:593px;width:367px;height:46px;z-index:21;">
+            <span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:23px;">20+ </span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">вариантов<br>планировки</span></div>
+         <div id="wb_Text7" style="position:absolute;left:717px;top:593px;width:367px;height:46px;z-index:22;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Метро «Звездная»<strong><br></strong></span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">15 мин. </span><span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:22px;">пешком (1,7 км)</span></div>
+         <div id="wb_Text8" style="position:absolute;left:424px;top:739px;width:402px;height:51px;text-align:center;z-index:23;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:50px;">Инфраструктура</span></div>
+         <div id="wb_Shape32" style="position:absolute;left:517px;top:671px;width:217px;height:40px;z-index:24;">
+            <div id="link1">
+               <img src="images/img0041.png" id="Shape32" alt="" style="width:217px;height:40px;">
+            </div></div>
+      </div>
+   </div>
+   <div id="Layer5" style="position:absolute;text-align:center;left:0%;top:2407px;width:100%;height:666px;z-index:127;min-width:1250px
+">
+      <div id="Layer5_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text15" style="position:absolute;left:62px;top:7px;width:1127px;height:51px;text-align:center;z-index:25;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:50px;">Более 20 вариантов планировок </span></div>
+         <div id="wb_Text16" style="position:absolute;left:127px;top:73px;width:996px;height:23px;text-align:center;z-index:26;">
+            <span style="color:#51473C;font-family:'Lato Light';font-size:19px;line-height:22px;">Выберите свою</span></div>
+         <div id="wb_Text17" style="position:absolute;left:22px;top:376px;width:260px;height:46px;text-align:center;z-index:27;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Студия</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:22px;"><br></span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">От 2,73 млн.руб</span></div>
+         <div id="wb_Text18" style="position:absolute;left:313px;top:376px;width:260px;height:46px;text-align:center;z-index:28;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Одна спальня</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:22px;"><br></span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">От 3,84 млн.руб</span></div>
+         <div id="wb_Text19" style="position:absolute;left:631px;top:376px;width:284px;height:46px;text-align:center;z-index:29;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Две спальни</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:22px;"><br></span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">От 5,1 млн.руб</span></div>
+         <div id="wb_Text20" style="position:absolute;left:962px;top:376px;width:260px;height:46px;text-align:center;z-index:30;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:19px;line-height:23px;">Три спальни</span><span style="color:#000000;font-family:Lato;font-size:19px;line-height:22px;"><br></span><span style="color:#000000;font-family:'Lato Bold';font-size:19px;line-height:22px;">От 7,05 млн.руб</span></div>
+         <div id="wb_Shape2" style="position:absolute;left:984px;top:442px;width:217px;height:48px;z-index:31;">
+            <a href="javascript:displaylightbox('./Form1/Zakazat1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0009_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0009.png" id="Shape2" alt="" style="width:217px;height:48px;"></span></a></div>
+         <div id="wb_Shape3" style="position:absolute;left:672px;top:442px;width:217px;height:48px;z-index:32;">
+            <a href="javascript:displaylightbox('./Form1/Zakazat1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0010_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0010.png" id="Shape3" alt="" style="width:217px;height:48px;"></span></a></div>
+         <div id="wb_Shape4" style="position:absolute;left:53px;top:442px;width:217px;height:48px;z-index:33;">
+            <a href="javascript:displaylightbox('./Form1/Zakazat1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0011_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0011.png" id="Shape4" alt="" style="width:217px;height:48px;"></span></a></div>
+         <div id="wb_Shape5" style="position:absolute;left:354px;top:442px;width:217px;height:48px;z-index:34;">
+            <a href="javascript:displaylightbox('./Primer1.php',{width:1000,height:1020})" target="_self"><img class="hover" src="images/img0012_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0012.png" id="Shape5" alt="" style="width:217px;height:48px;"></span></a></div>
+         <div id="wb_Shape7" style="position:absolute;left:464px;top:564px;width:313px;height:48px;z-index:35;">
+            <a href="javascript:displaylightbox('./Form1/3.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0013_hover.png" alt="" style="border-width:0;width:313px;height:48px;"><span><img src="images/img0013.png" id="Shape7" alt="" style="width:313px;height:48px;"></span></a></div>
+         <div id="wb_Shape34" style="position:absolute;left:515px;top:626px;width:217px;height:40px;z-index:36;">
+            <div id="link3">
+               <img src="images/img0036.png" id="Shape34" alt="" style="width:217px;height:40px;">
+            </div></div>
+         <div id="RollOver1" style="position:absolute;left:93px;top:93px;width:136px;height:269px;overflow:hidden;z-index:37">
+            <a href="">
+               <img class="hover" alt="" src="images/1h1.jpg">
+            </a>
+         </div>
+         <div id="RollOver2" style="position:absolute;left:354px;top:134px;width:179px;height:227px;overflow:hidden;z-index:38">
+            <a href="">
+               <img class="hover" alt="" src="images/2h1.jpg">
+            </a>
+         </div>
+         <div id="RollOver3" style="position:absolute;left:631px;top:173px;width:284px;height:200px;overflow:hidden;z-index:39">
+            <a href="">
+               <img class="hover" alt="" src="images/3h1.jpg">
+            </a>
+         </div>
+         <div id="RollOver4" style="position:absolute;left:1007px;top:117px;width:169px;height:245px;overflow:hidden;z-index:40">
+            <a href="">
+               <img class="hover" alt="" src="images/4h1.jpg">
+            </a>
+         </div>
+      </div>
+   </div>
+   <div id="Layer6" style="position:absolute;text-align:center;left:0%;top:3073px;width:100%;height:598px;z-index:128;min-width:1250px
+">
+      <div id="Layer6_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text21" style="position:absolute;left:57px;top:34px;width:1127px;height:102px;text-align:center;z-index:41;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:51px;">Двухкомнатная квартира<br>по цене однокомнатной*</span></div>
+         <div id="wb_Image10" style="position:absolute;left:50px;top:188px;width:439px;height:371px;z-index:42;">
+            <img src="images/6.png" id="Image10" alt=""></div>
+         <div id="wb_Text22" style="position:absolute;left:562px;top:197px;width:429px;height:165px;z-index:43;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:20px;line-height:29px;">Предложение действительно </span><span style="color:#000000;font-family:Lato;font-size:16px;line-height:29px;"><br></span><span style="color:#E5572C;font-family:'Lato Bold';font-size:24px;line-height:29px;">до 30.09.2019</span><span style="color:#000000;font-family:Lato;font-size:16px;line-height:19px;"><br><br></span><span style="color:#000000;font-family:'Lato Light';font-size:20px;line-height:24px;">Зарезервировать 2-х комнатную</span><span style="color:#000000;font-family:Lato;font-size:16px;line-height:19px;"><br><br></span><span style="color:#E5572C;font-family:'Lato Bold';font-size:37px;line-height:45px;">по цене 1 комнатной!</span></div>
+         <div id="wb_Text23" style="position:absolute;left:562px;top:478px;width:340px;height:21px;z-index:44;">
+            <span style="color:#000000;font-family:Lato;font-size:17px;line-height:21px;">*Осталось всего <strike> 67</strike> </span></div>
+         <div id="wb_Text24" style="position:absolute;left:631px;top:509px;width:154px;height:42px;z-index:45;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:17px;line-height:21px;">акционных<br>квартир</span></div>
+         <div id="wb_Text25" style="position:absolute;left:556px;top:499px;width:116px;height:63px;z-index:46;">
+            <span style="color:#000000;font-family:Lato;font-size:17px;line-height:63px;"> </span><span style="color:#E5572C;font-family:Lato;font-size:53px;line-height:63px;">15</span></div>
+         <div id="wb_Shape35" style="position:absolute;left:515px;top:558px;width:217px;height:40px;z-index:47;">
+            <div id="link4">
+               <img src="images/img0037.png" id="Shape35" alt="" style="width:217px;height:40px;">
+            </div></div>
+         <iframe name="InlineFrame1" id="InlineFrame1" style="position:absolute;left:531px;top:374px;width:579px;height:104px;z-index:48;" src="./Form1/4.php" scrolling="no"></iframe>
+      </div>
+   </div>
+   <div id="Layer7" style="position:absolute;text-align:center;left:0%;top:3671px;width:100%;height:849px;z-index:129;min-width:1250px
+">
+      <div id="Layer7_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Shape17" style="position:absolute;left:352px;top:473px;width:245px;height:168px;z-index:49;">
+            <div id="Shape17"></div></div>
+         <div id="wb_Shape16" style="position:absolute;left:50px;top:473px;width:245px;height:168px;z-index:50;">
+            <div id="Shape16"></div></div>
+         <div id="wb_Shape20" style="position:absolute;left:956px;top:473px;width:245px;height:168px;z-index:51;">
+            <div id="Shape20"></div></div>
+         <div id="wb_Shape19" style="position:absolute;left:654px;top:473px;width:245px;height:168px;z-index:52;">
+            <div id="Shape19"></div></div>
+         <div id="wb_Text26" style="position:absolute;left:61px;top:57px;width:1127px;height:51px;text-align:center;z-index:53;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:50px;">Ипотека </span></div>
+         <div id="wb_Text27" style="position:absolute;left:126px;top:134px;width:996px;height:46px;text-align:center;z-index:54;">
+            <span style="color:#51473C;font-family:'Lato Light';font-size:19px;line-height:23px;">8 банков партнеров. Бесплатная помощь в одобрении ипотеки в сложных ситуациях<br>(плохая кредитная история, неподтвержденный доход и т.п.).</span></div>
+         <div id="wb_Shape8" style="position:absolute;left:49px;top:240px;width:245px;height:168px;z-index:55;">
+            <div id="Shape8"></div></div>
+         <div id="wb_Shape11" style="position:absolute;left:351px;top:240px;width:245px;height:168px;z-index:56;">
+            <div id="Shape11"></div></div>
+         <div id="wb_Shape10" style="position:absolute;left:956px;top:240px;width:245px;height:168px;z-index:57;">
+            <div id="Shape10"></div></div>
+         <div id="wb_Shape9" style="position:absolute;left:653px;top:240px;width:245px;height:168px;z-index:58;">
+            <div id="Shape9"></div></div>
+         <div id="wb_Shape12" style="position:absolute;left:142px;top:341px;width:55px;height:55px;z-index:59;">
+            <img src="images/img0015.png" id="Shape12" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Shape15" style="position:absolute;left:446px;top:341px;width:55px;height:55px;z-index:60;">
+            <img src="images/img0016.png" id="Shape15" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Shape14" style="position:absolute;left:747px;top:334px;width:64px;height:64px;z-index:61;">
+            <img src="images/img0017.png" id="Shape14" alt="" style="width:64px;height:64px;"></div>
+         <div id="wb_Shape13" style="position:absolute;left:1051px;top:341px;width:55px;height:55px;z-index:62;">
+            <img src="images/img0018.png" id="Shape13" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Text28" style="position:absolute;left:33px;top:315px;width:276px;height:69px;text-align:center;z-index:63;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">Сбербанк<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 5%</span></div>
+         <div id="wb_Image11" style="position:absolute;left:93px;top:249px;width:156px;height:57px;z-index:64;">
+            <img src="images/e7c8b97599fbb04f93a64654cef13d51.png" id="Image11" alt=""></div>
+         <div id="wb_Text32" style="position:absolute;left:956px;top:315px;width:245px;height:69px;text-align:center;z-index:65;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">Россельхозбанк<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:17px;"><br>от 4,5%</span></div>
+         <div id="wb_Text31" style="position:absolute;left:642px;top:308px;width:276px;height:69px;text-align:center;z-index:66;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">Росбанк<br><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 7,49%</span></div>
+         <div id="wb_Text29" style="position:absolute;left:335px;top:315px;width:276px;height:69px;text-align:center;z-index:67;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">Санкт-Петербург<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 6%</span></div>
+         <div id="wb_Image12" style="position:absolute;left:365px;top:240px;width:216px;height:81px;z-index:68;">
+            <img src="images/bfa8104b20b5ba6f393e664391401869.png" id="Image12" alt=""></div>
+         <div id="wb_Image13" style="position:absolute;left:688px;top:261px;width:175px;height:38px;z-index:69;">
+            <img src="images/111.png" id="Image13" alt=""></div>
+         <div id="wb_Image14" style="position:absolute;left:1005px;top:250px;width:146px;height:54px;z-index:70;">
+            <img src="images/rosselhz.png" id="Image14" alt=""></div>
+         <div id="wb_Shape18" style="position:absolute;left:447px;top:574px;width:55px;height:55px;z-index:71;">
+            <img src="images/img0023.png" id="Shape18" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Shape21" style="position:absolute;left:1051px;top:574px;width:55px;height:55px;z-index:72;">
+            <img src="images/img0024.png" id="Shape21" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Shape22" style="position:absolute;left:142px;top:574px;width:55px;height:55px;z-index:73;">
+            <img src="images/img0025.png" id="Shape22" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Shape23" style="position:absolute;left:746px;top:574px;width:55px;height:55px;z-index:74;">
+            <img src="images/img0026.png" id="Shape23" alt="" style="width:55px;height:55px;"></div>
+         <div id="wb_Text35" style="position:absolute;left:638px;top:548px;width:276px;height:69px;text-align:center;z-index:75;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">АИЖК<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 6%</span></div>
+         <div id="wb_Text37" style="position:absolute;left:940px;top:548px;width:276px;height:69px;text-align:center;z-index:76;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">Глобэкс банк<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 6%</span></div>
+         <div id="wb_Text34" style="position:absolute;left:336px;top:548px;width:276px;height:69px;text-align:center;z-index:77;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">ВТБ<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 5%</span></div>
+         <div id="wb_Text33" style="position:absolute;left:34px;top:548px;width:276px;height:69px;text-align:center;z-index:78;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:23px;">УРАЛСИБ<br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:16px;line-height:19px;"><br></span><span style="color:#FFFFFF;font-family:'Lato Light';font-size:15px;line-height:19px;">от 5%</span></div>
+         <div id="wb_Image19" style="position:absolute;left:93px;top:469px;width:189px;height:70px;z-index:79;">
+            <img src="images/uralsib.png" id="Image19" alt=""></div>
+         <div id="wb_Image15" style="position:absolute;left:406px;top:488px;width:117px;height:44px;z-index:80;">
+            <img src="images/vtb_mini.png" id="Image15" alt=""></div>
+         <div id="wb_Image16" style="position:absolute;left:700px;top:490px;width:146px;height:47px;z-index:81;">
+            <img src="images/imgonline-com-ua-Resize-VtobmnCTrAz.png" id="Image16" alt=""></div>
+         <div id="wb_Image17" style="position:absolute;left:1005px;top:487px;width:141px;height:52px;z-index:82;">
+            <img src="images/globeks.png" id="Image17" alt=""></div>
+         <div id="wb_Shape24" style="position:absolute;left:469px;top:693px;width:313px;height:48px;z-index:83;">
+            <a href="javascript:displaylightbox('./Form1/2.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0027_hover.png" alt="" style="border-width:0;width:313px;height:48px;"><span><img src="images/img0027.png" id="Shape24" alt="" style="width:313px;height:48px;"></span></a></div>
+      </div>
+   </div>
+   <div id="Layer8" style="position:absolute;text-align:center;left:0%;top:4412px;width:100%;height:715px;z-index:130;min-width:1250px
+">
+      <div id="Layer8_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Image18" style="position:absolute;left:3px;top:62px;width:1245px;height:600px;z-index:84;">
+            <img src="images/5.png" id="Image18" alt=""></div>
+         <div id="wb_Image24" style="position:absolute;left:75px;top:124px;width:1100px;height:511px;z-index:85;">
+            <div class="calculator-block">
+               <div class="calculator-block__aside">
+                  <div class="calculator-block__aside-head">
+                     <div class="calculator__text">Ежемесячный платеж</div>
+                     <div class="calculator__text">от 
+											 <span class="calculator__text-lg color-accent">20 000</span>
+											 руб</div>
+											 <div class="calculator__text color-accent">Ежемесячный платеж</div>
+                  </div>
+                  <div class="calculator-block__aside-group">
+										<div class=  calculator__text">Стоимость квартиры</div>
+										<div class="calculator-block__aside-group-row">
+											<div class="calculator-block__aside-group-result calculator__text range-result-js">0</div>
+											<div class="calculator-block__aside-group-value color-gray text-sm calculator__text">руб</div>
+										</div>
+										<div class="calculator-block__aside-group-input-wrap">
+												<input class="slider-js" type="text" data-min="100" data-from="1000000" data-max="1000000000"/>
+										</div>
+										<div class="calculator-block__aside-group-small"></div>
+									</div>
+									<!-- /.calculator-block__aside-group -->
+									
+                  <div class="calculator-block__aside-group">
+										<div class=  calculator__text">Первоначальный взнос 50%*</div>
+										<div class="calculator-block__aside-group-row">
+											<div class="calculator-block__aside-group-result calculator__text range-result-js">0</div>
+											<div class="calculator-block__aside-group-value color-gray text-sm calculator__text">руб</div>
+										</div>
+										<div class="calculator-block__aside-group-input-wrap">
+												<input class="slider-js" type="text" data-min="100" data-from="1000000" data-max="1000000000"/>
+										</div>
+										<div class="calculator-block__aside-group-small"></div>
+									</div>
+									<!-- /.calculator-block__aside-group -->
+                  <div class="calculator-block__aside-group">
+										<div class=  calculator__text">Ставка %**</div>
+										<div class="calculator-block__aside-group-row">
+											<div class="calculator-block__aside-group-result calculator__text range-result-js">0</div>
+											<div class="calculator-block__aside-group-value color-gray text-sm calculator__text">%</div>
+										</div>
+										<div class="calculator-block__aside-group-input-wrap">
+												<input class="slider-js" type="text" data-min="0" data-from="16" data-max="200"/>
+										</div>
+										<div class="calculator-block__aside-group-small"></div>
+									</div>
+									<!-- /.calculator-block__aside-group -->
+                  <div class="calculator-block__aside-group">
+										<div class=  calculator__text">Срок кредита</div>
+										<div class="calculator-block__aside-group-row">
+											<div class="calculator-block__aside-group-result calculator__text range-result-js">0</div>
+											<div class="calculator-block__aside-group-value color-gray text-sm calculator__text">лет</div>
+										</div>
+										<div class="calculator-block__aside-group-input-wrap">
+												<input class="slider-js" type="text" data-min="1" data-from="15" data-max="50"/>
+										</div>
+										<div class="calculator-block__aside-group-small"></div>
+									</div>
+									<!-- /.calculator-block__aside-group -->
+
+							 </div>
+							 <!-- /.calculator-block__asid -->
+               <div class="calculator-block__main">
+								 <div class="calculator-block__title">Расчет от суммы кредита</div>
+								 	<div class="calculator-block__main-group">
+										 <div class="calculator-block__main-group-title">Сумма кредита</div>
+										 <div class="calculator-block__main-group-row">
+											<div class="calculator-block__main-group-input-wrap">
+													<input class="slider-js" type="text" data-min="500000" data-from="1000000" data-max="3000000"/>
+											</div>
+											<div class="calculator-block__main-group-result"><input class='result-js' type="text">
+											<span class="color-gray">руб.</span>
+											</div>
+										 </div>
+									 </div>
+									 <!-- /calculator-block__main-group -->
+									 
+								 	<div class="calculator-block__main-group">
+										 <div class="calculator-block__main-group-title">Срок кредита</div>
+										 <div class="calculator-block__main-group-row">
+											<div class="calculator-block__main-group-input-wrap">
+													<input class="slider-js" type="text" data-min="12" data-from="20" data-max="100" data-postfix=" мес."/>
+											</div>
+											<div class="calculator-block__main-group-result"><input class='result-js' type="text" >
+											<span class="color-gray">мес.</span>
+											</div>
+										 </div>
+									 </div>
+									 <!-- /calculator-block__main-group -->
+								 	<div class="calculator-block__main-group">
+										 <div class="calculator-block__main-group-title">Ставка</div>
+										 <div class="calculator-block__main-group-row">
+											<div class="calculator-block__main-group-input-wrap">
+													<input class="slider-js" type="text" data-min="2" data-from="12" data-max="300" data-postfix=" %"/>
+											</div>
+											<div class="calculator-block__main-group-result"><input class='result-js' type="text">
+											<span class="color-gray"> %</span>
+											</div>
+										 </div>
+									 </div>
+									 <!-- /calculator-block__main-group -->
+									<div class="calculator-block__main-total">
+											<div class="calculator-block__main-total-item">
+												<div>
+													<div class="calculator__text">Сумма</div>
+													<div class="calculator__text">ежемесячного платежа</div>
+												</div>
+												<div class="calculator__text">
+													<span class="calculator__text-lg strong">7080 </span>
+													
+													руб/мес</div>
+
+											</div>
+
+											
+											<div class="calculator-block__main-total-item">
+												<div>
+													<div class="calculator__text">Сумма</div>
+													<div class="calculator__text">кредита</div>
+												</div>
+												<div class="calculator__text">
+													<span class="calculator__text-lg strong">200 000 </span>
+													
+													руб</div>
+
+											</div>
+
+
+									</div>
+							 </div>
+							 <!-- /.calculator-block__main -->
+            </div>
+            <!-- <img src="images/9.png" id="Image24" alt=""></div> -->
+         <div id="wb_Shape38" style="position:absolute;left:516px;top:558px;width:217px;height:40px;z-index:86;">
+            <div id="link5">
+               <img src="images/img0040.png" id="Shape38" alt="" style="width:217px;height:40px;">
+            </div></div>
+      </div>
+   </div>
+   <div id="Layer9" style="position:absolute;text-align:center;left:0%;top:5070px;width:100%;height:1292px;z-index:131;min-width:1250px
+">
+      <div id="Layer9_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text38" style="position:absolute;left:61px;top:17px;width:1127px;height:51px;text-align:center;z-index:94;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:50px;">Ход строительства</span></div>
+         <div id="wb_Image20" style="position:absolute;left:16px;top:109px;width:1219px;height:309px;z-index:95;">
+            <img src="images/8.png" id="Image20" alt=""></div>
+         <div id="wb_Text39" style="position:absolute;left:112px;top:432px;width:201px;height:19px;text-align:center;z-index:96;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:19px;">Сентябрь 2019</span></div>
+         <div id="wb_Text40" style="position:absolute;left:326px;top:432px;width:201px;height:19px;text-align:center;z-index:97;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:19px;">Август 2019</span></div>
+         <div id="wb_Text41" style="position:absolute;left:523px;top:432px;width:201px;height:19px;text-align:center;z-index:98;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:19px;">Июль 2019</span></div>
+         <div id="wb_Text42" style="position:absolute;left:717px;top:432px;width:201px;height:19px;text-align:center;z-index:99;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:19px;">Июнь 2019</span></div>
+         <div id="wb_Text43" style="position:absolute;left:922px;top:432px;width:201px;height:19px;text-align:center;z-index:100;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:16px;line-height:19px;">Май 2019</span></div>
+         <div id="wb_Text44" style="position:absolute;left:61px;top:509px;width:1127px;height:51px;text-align:center;z-index:101;">
+            <span style="color:#51473C;font-family:Lato;font-size:43px;line-height:50px;">Команда проекта</span></div>
+         <div id="wb_Image21" style="position:absolute;left:49px;top:596px;width:1150px;height:521px;z-index:102;">
+            <img src="images/bg2-24.jpg" id="Image21" alt="Web" title="Web"></div>
+         <div id="Layer10" style="position:absolute;text-align:center;left:0%;top:1145px;width:100%;height:118px;z-index:103;min-width:1250px
+">
+            <div id="Layer10_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+               <div id="wb_Text45" style="position:absolute;left:50px;top:39px;width:290px;height:24px;z-index:87;">
+                  <span style="color:#51473C;font-family:'Lato Bold';font-size:20px;line-height:24px;">ЖК «Две столицы»</span></div>
+               <div id="wb_Text46" style="position:absolute;left:286px;top:42px;width:302px;height:76px;z-index:88;">
+                  <span style="color:#51473C;font-family:'Lato Light';font-size:16px;line-height:19px;"><strong>Адрес объекта:</strong><br>г.Санкт-Петербург,<br>р-н Московский,<br>Московское шоссе, 13б</span></div>
+               <div id="wb_Image22" style="position:absolute;left:717px;top:35px;width:34px;height:33px;z-index:89;">
+                  <img src="images/1.png" id="Image22" alt=""></div>
+               <div id="wb_Image23" style="position:absolute;left:760px;top:35px;width:33px;height:33px;z-index:90;">
+                  <img src="images/2.png" id="Image23" alt=""></div>
+               <div id="wb_Text47" style="position:absolute;left:810px;top:38px;width:273px;height:24px;z-index:91;">
+                  <span style="color:#000000;font-family:'Lato Light';font-size:20px;line-height:24px;">8-812-</span><span style="color:#000000;font-family:'Lato Bold';font-size:20px;line-height:24px;">292-39-05</span></div>
+               <div id="wb_Shape25" style="position:absolute;left:983px;top:27px;width:217px;height:48px;z-index:92;">
+                  <a href="javascript:displaylightbox('./Form1/Zakazat1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0028_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0028.png" id="Shape25" alt="" style="width:217px;height:48px;"></span></a></div>
+               <div id="wb_Text48" style="position:absolute;left:811px;top:68px;width:232px;height:15px;z-index:93;">
+                  <span style="color:#000000;font-family:'Lato Light';font-size:12px;line-height:15px;">Время работы: 9:00 - 21:00</span></div>
+            </div>
+         </div>
+         <div id="wb_Shape36" style="position:absolute;left:515px;top:451px;width:217px;height:40px;z-index:104;">
+            <div id="link6">
+               <img src="images/img0038.png" id="Shape36" alt="" style="width:217px;height:40px;">
+            </div></div>
+         <div id="wb_Shape37" style="position:absolute;left:515px;top:1077px;width:217px;height:40px;z-index:105;">
+            <div id="link7">
+               <img src="images/img0039.png" id="Shape37" alt="" style="width:217px;height:40px;">
+            </div></div>
+      </div>
+   </div>
+   <div id="Layer11" style="position:absolute;text-align:center;left:0%;top:6362px;width:100%;height:37px;z-index:132;min-width:1250px
+">
+      <div id="Layer11_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_Text30" style="position:absolute;left:50px;top:9px;width:421px;height:16px;z-index:113;">
+            <span style="color:#D5E7EF;"><strong><u><a href="javascript:popupwnd('file://','no','no','no','no','no','no','','','800','550')" target="_self">Политика конфиденциальности</a></u></strong></span></div>
+         <div id="wb_Text36" style="position:absolute;left:301px;top:12px;width:944px;height:13px;z-index:114;">
+            <span style="color:#CEC5BA;">Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.</span></div>
+      </div>
+   </div>
+   <div id="Layer12" style="position:fixed;text-align:center;left:0;top:0;right:0;height:37px;z-index:133;min-width:1250px
+">
+      <div id="Layer12_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="wb_TextMenu2" style="position:absolute;left:2px;top:5px;width:1245px;height:32px;z-index:115;">
+            <span><a href="#link1" class="style1">&#1048;&#1085;&#1092;&#1088;&#1072;&#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1072;</a></span><span><a href="#link2" class="style1">&#1055;&#1083;&#1072;&#1085;&#1080;&#1088;&#1086;&#1074;&#1082;&#1080;</a></span><span><a href="#link3" class="style1">&#1057;&#1087;&#1077;&#1094;&#1087;&#1088;&#1077;&#1076;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077;</a></span><span><a href="#link4" class="style1">&#1048;&#1087;&#1086;&#1090;&#1077;&#1082;&#1072;	</a></span><span><a href="#link5" class="style1">&#1061;&#1086;&#1076; &#1089;&#1090;&#1088;&#1086;&#1080;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1072;</a></span><span><a href="#link6" class="style1">&#1050;&#1086;&#1084;&#1072;&#1085;&#1076;&#1072;</a></span><span><a href="#link7" class="style1">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></span></div>
+      </div>
+   </div>
+   <div id="Layer1" style="position:absolute;text-align:center;left:0%;top:0px;width:100%;height:100px;z-index:134;min-width:1250px
+">
+      <div id="Layer1_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+         <div id="Html2" style="position:absolute;left:0px;top:15px;width:37px;height:15px;z-index:117">
+</div>
+         <div id="wb_Text1" style="position:absolute;left:50px;top:39px;width:290px;height:24px;z-index:118;">
+            <span style="color:#51473C;font-family:'Lato Bold';font-size:20px;line-height:24px;">ЖК «Две столицы»</span></div>
+         <div id="wb_Text2" style="position:absolute;left:286px;top:42px;width:302px;height:19px;z-index:119;">
+            <span style="color:#51473C;font-family:'Lato Light';font-size:16px;line-height:19px;">г.Санкт-Петербург, р-н Московский</span></div>
+         <div id="wb_Image2" style="position:absolute;left:717px;top:35px;width:34px;height:33px;z-index:120;">
+            <img src="images/1.png" id="Image2" alt=""></div>
+         <div id="wb_Image1" style="position:absolute;left:760px;top:35px;width:33px;height:33px;z-index:121;">
+            <img src="images/2.png" id="Image1" alt=""></div>
+         <div id="wb_Text3" style="position:absolute;left:810px;top:38px;width:273px;height:24px;z-index:122;">
+            <span style="color:#000000;font-family:'Lato Light';font-size:20px;line-height:24px;">8-812-</span><span style="color:#000000;font-family:'Lato Bold';font-size:20px;line-height:24px;">292-39-05</span></div>
+         <div id="wb_Shape6" style="position:absolute;left:983px;top:27px;width:217px;height:48px;z-index:123;">
+            <a href="javascript:displaylightbox('./Form1/Zakazat1.php',{width:357,height:301})" target="_self"><img class="hover" src="images/img0007_hover.png" alt="" style="border-width:0;width:217px;height:48px;"><span><img src="images/img0007.png" id="Shape6" alt="" style="width:217px;height:48px;"></span></a></div>
+      </div>
+   </div>
+   <script>   
+       $(window).load(function(){
+            var id="Carousel1" ;
+           $("#"+id+" a").each(function(){
+               $(this).attr("rel",id)
+           }  )  ;
+           $("a[rel^='"+id+"']").fancybox({});
+       })
+	 </script>
+	 
+	 <script src="libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
